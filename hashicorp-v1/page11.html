@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Vault PKI Primer</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="{{ url_for('static',filename='fav-icon/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="{{ url_for('static',filename='fav-icon/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="{{ url_for('static',filename='fav-icon/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ url_for('static',filename='fav-icon/site.webmanifest') }}">
+    <link rel="mask-icon" href="{{ url_for('static',filename='fav-icon/safari-pinned-tab.svg') }}" color="#5bbad5">
+    <link rel="shortcut icon" href="{{ url_for('static',filename='fav-icon/safari-pinned-tab.svg') }}">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="{{ url_for('static',filename='fav-icon/browserconfig.xml') }}">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css'">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/vault-ssl-server-data.js'"></script>
+
+    <style>
+        .server-data {
+            border-radius: 5px;
+            background-color: var(--gray-1);
+            color: white;
+            font: 14px Inconsolata, monospace;
+            line-height: 1.6;
+            width: 600px;
+            height: 400px;
+            padding: 20px;
+            pointer-events: none;
+            position: relative;
+            transition: height 1s ease-in-out;
+        }
+
+        .server-data .top {
+            background: #E8E6E8;
+            color: black;
+            padding: 5px;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .server-data .btns {
+            position: absolute;
+            top: 7px;
+            left: 5px;
+        }
+
+        .server-data .circle {
+            width: 12px;
+            height: 12px;
+            display: inline-block;
+            border-radius: 15px;
+            margin-left: 2px;
+            border-width: 1px;
+            border-style: solid;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .red {
+            background: #EC6A5F;
+            border-color: #D04E42;
+        }
+
+        .green {
+            background: #64CC57;
+            border-color: #4EA73B;
+        }
+
+        .yellow {
+            background: #F5C04F;
+            border-color: #D6A13D;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .server-data .body {
+            background: black;
+            color: #7AFB4C;
+            padding: 8px;
+            overflow: auto;
+        }
+
+        .space {
+            margin: 25px;
+        }
+
+        .shadow {
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, .4)
+        }
+
+        .fake-buttom {
+            background-color: #623CE4;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .checkout {
+            border-radius: 10px;
+            padding: 30px;
+            background-color: var(--brand-accent);
+            background-image: var(--brand-gradient);
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+        }
+
+        .product-image {
+            border-radius: 7%;
+            width: 300px;
+            border: 5px solid var(--gray-5);
+
+        }
+
+        .product-id {
+            text-transform: uppercase;
+            font-size: 10px;
+            font-weight: 700;
+            padding-bottom: 20px;
+            color: var(--gray-6);
+        }
+
+        .billing-details table {
+            width: 250px;
+            height: 30px;
+            text-align: left;
+            font-size: 14px;
+            color: var(--gray-5);
+        }
+
+        .billing-details {
+            padding-bottom: 20px;
+        }
+
+        .billing-details table tr:last-child {
+            border-top: 2px solid var(--gray-6);
+            color: var(--gray-6);
+            font-weight: 700;
+        }
+
+        .billing-details table tr td:last-child {
+            text-align: right;
+        }
+
+        .fail-wrapper {
+            display: none;
+        }
+
+        .failed-checkout {
+            border-radius: 10px;
+            padding: 30px;
+            background-color: var(--brand-accent);
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+            height: 400px;
+        }
+
+        .fail-image {
+            width: 300px;
+        }
+
+
+        .failure-message {}
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="main-wrapper">
+            <div class="main-content">
+
+                <div class="explainer-wrapper">
+
+                    <div class="checkout" id="checkout">
+                        <div class="product">
+                            <img class="product-image" src="img/isometric-test-05.jpg" alt="NFT-98293ASBD879230-021">
+                        </div>
+                        <div class="product-id">NFT-98293ASBD879230-021</div>
+                        <div class="billing-details">
+                            <table>
+                                <tr>
+                                    <td>Sub-total</td>
+                                    <td>$ 4,907.41</td>
+                                </tr>
+                                <tr>
+                                    <td>Self-delivery (download)</td>
+                                    <td>$ 86.66</td>
+                                </tr>
+                                <tr>
+                                    <td>Out-of-nowhere Fees</td>
+                                    <td>$ 299.99</td>
+                                </tr>
+                                <tr>
+                                    <td>Total</td>
+                                    <td>$ 5,294.06</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="fake-buttom" id="fake-buttom" data-clicked="false">checkout</div>
+                    </div>
+
+                    <div class="fail-wrapper">
+                        <div class="failed-checkout">
+
+                            <div class="failure-image">
+                                <img class="fail-image" src="img/500-error.svg" alt="Error">
+                            </div>
+
+                            <div class="failure-message">
+                                <p>Oh dear us! It seems we have are unble to complete your
+                                    transaction request.
+                                </p>
+                                <p>Our Bitcoin Overlords apologize
+                                    and hope that you will try again in the near future.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="explainer-wrapper">
+                    <div class="server-data">
+                        <div class="btns">
+                            <span class="circle red"></span>
+                            <span class="circle yellow"></span>
+                            <span class="circle green"></span>
+                        </div>
+                        <div id="server-data"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <div class="last">
+        <a href="{{ url_for('ten') }}">
+            <img src="{{ url_for('static', filename='img/left-arrow.svg') }}" alt="Last">
+        </a>
+    </div>
+
+</body>
+
+</html>
