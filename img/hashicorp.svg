@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="420px" height="445px" viewBox="0 0 420 445" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>HashiCorp Logo</title>
+    <defs>
+        <polygon id="path-1"
+            points="0 96.4970143 0 96.6150535 0 328.325927 62.6378474 364.622969 62.6378474 132.794056 166.740185 72.476045 166.740185 0">
+        </polygon>
+        <filter x="-7.5%" y="-3.4%" width="121.0%" height="109.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="5" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1">
+            </feColorMatrix>
+        </filter>
+        <polygon id="path-3"
+            points="129.216292 0 129.216292 184.613248 62.6966623 184.613248 62.6966623 115.737398 0 151.97542 0 388.525899 62.6966623 424.94098 62.6966623 240.799889 129.216292 240.799889 129.216292 309.262602 191.854139 272.96556 191.854139 36.2970421">
+        </polygon>
+        <filter x="-6.5%" y="-2.9%" width="118.2%" height="108.2%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="5" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1">
+            </feColorMatrix>
+        </filter>
+        <polygon id="path-5"
+            points="0 364.622969 166.740185 268.125955 166.740185 268.007916 166.740185 36.2970421 104.102338 0 104.102338 231.828913 0 292.087904">
+        </polygon>
+        <filter x="-7.5%" y="-3.4%" width="121.0%" height="109.6%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="5" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1">
+            </feColorMatrix>
+        </filter>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#63D0FF" offset="0%"></stop>
+            <stop stop-color="#CEFCF2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="HashiCorp-Logo" stroke="none" stroke-width="2" fill="none" fill-rule="evenodd">
+        <g id="Guides" transform="translate(5.000000, 5.000000)" stroke="#63D0FF">
+            <g id="contour" transform="translate(4.500000, 4.500000)" stroke="url(#linearGradient-1)">
+                <g id="line_01-2" transform="translate(1.500000, 97.115053)" style="--order: 7">
+                    <line x1="0" y1="0" x2="400" y2="233.384947" id="line_01"></line>
+                </g>
+                <g id="line_03-2" transform="translate(233.759815, 0.500000)" style="--order: 8">
+                    <line x1="0" y1="0" x2="166.740185" y2="96.6150535" id="line_03"></line>
+                </g>
+                <g id="line_02-2" transform="translate(400.000000, 97.174073)" style="--order: 9">
+                    <line x1="0.5" y1="0" x2="0.5" y2="233.325927" id="line_02"></line>
+                </g>
+                <g id="line_04-2" transform="translate(156.000000, 0.000000)" style="--order: 10">
+                    <line x1="90" y1="0.5" x2="1.7918781e-15" y2="0.5" id="line_04"></line>
+                </g>
+                <g id="line_05-2" transform="translate(0.500000, 0.500000)" style="--order: 11">
+                    <line x1="166.740185" y1="0" x2="2.54490391e-15" y2="96.6150535" id="line_05"></line>
+                </g>
+                <g id="line_06-2" transform="translate(0.000000, 97.174073)" style="--order: 12">
+                    <line x1="0.5" y1="0" x2="0.5" y2="231.651854" id="line_06"></line>
+                </g>
+                <g id="line_07-2" transform="translate(0.500000, 328.825927)" style="--order: 13">
+                    <line x1="0" y1="0" x2="166.740185" y2="96.674073" id="line_07"></line>
+                </g>
+                <g id="line_08-2" transform="translate(156.000000, 425.000000)" style="--order: 14">
+                    <line x1="0" y1="0.539926261" x2="89.9999646" y2="0.460073739" id="line_08"></line>
+                </g>
+                <g id="line_09-2" transform="translate(233.759815, 330.500000)" style="--order: 15">
+                    <line x1="0" y1="95" x2="166.740185" y2="-1.13110042e-13" id="line_09"></line>
+                </g>
+            </g>
+            <g id="left_v" transform="translate(5.000000, 0.000000)">
+                <g id="v_line_01-3" style="--order: 1">
+                    <line x1="0.5" y1="0" x2="0.5" y2="435" id="v_line_01"></line>
+                </g>
+                <g id="v_line_04-3" transform="translate(166.000000, 0.000000)" style="--order: 2">
+                    <line x1="0.5" y1="0" x2="0.5" y2="435" id="v_line_04"></line>
+                </g>
+            </g>
+            <g id="right_v" transform="translate(238.000000, 1.000000)">
+                <g id="v_line_01-2" style="--order: 3">
+                    <line x1="0.5" y1="0" x2="0.5" y2="434" id="v_line_01"></line>
+                </g>
+                <g id="v_line_04-2" transform="translate(166.000000, 0.000000)" style="--order: 4">
+                    <line x1="0.5" y1="0" x2="0.5" y2="434" id="v_line_04"></line>
+                </g>
+            </g>
+            <g id="middle_h" transform="translate(0.000000, 189.500000)">
+                <g id="h_line_01-2" style="--order: 5">
+                    <line x1="0" y1="0.5" x2="410" y2="0.5" id="h_line_01"></line>
+                </g>
+                <g id="h_line_02-2" transform="translate(1.000000, 56.000000)" style="--order: 6">
+                    <line x1="0" y1="0.5" x2="410" y2="0.5" id="h_line_02"></line>
+                </g>
+            </g>
+
+        </g>
+        <g id="HashiCorp" transform="translate(10.000000, 10.000000)" fill-rule="nonzero">
+            <g id="left">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#000000" xlink:href="#path-1"></use>
+            </g>
+            <g id="middle" transform="translate(104.043523, 0.000000)">
+                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                <use fill="#000000" xlink:href="#path-3"></use>
+            </g>
+            <g id="right" transform="translate(233.259815, 60.377031)">
+                <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                <use fill="#000000" xlink:href="#path-5"></use>
+            </g>
+        </g>
+    </g>
+</svg>
