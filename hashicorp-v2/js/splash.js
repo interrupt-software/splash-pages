@@ -16,5 +16,5 @@ window.onload = function () {
     Promise.all(
         svg_diagram.getAnimations({ subtree: true })
             .map(animation => animation.finished)
-    ).then(() => window.location.replace("https://github.com/interrupt-software/splash-pages"));
+    ).then(() => window.location.replace("https://interrupt-software.github.io/splash-pages/"));
 }
