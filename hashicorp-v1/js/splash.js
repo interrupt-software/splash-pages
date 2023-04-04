@@ -170,7 +170,7 @@ window.onload = function () {
     Promise.all(
         document.getElementById(magic_cell_id.toString()).getAnimations({ subtree: true })
             .map(animation => animation.finished)
-    ).then(() => window.location.replace("page2.html"));
+    ).then(() => window.location.replace("https://github.com/interrupt-software/splash-pages"));
 
 }
 
