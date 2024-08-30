@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Refresh" content="5; URL=index.html">
+    <title>SentinelOne</title>
+
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loader">
+        <img alt="SentinelOne Logo">
+    </div>
+
+    <script>
+        
+        var url = "img/s1_logo_light.svg?r=" + Math.random();
+        document.querySelector("#loader img").setAttribute("src", url);
+
+    </script>
+</body>
+
+</html>
