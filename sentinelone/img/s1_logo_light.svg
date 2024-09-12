@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="816px" height="816px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="800px" height="800px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <metadata>
+        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+            <rdf:Description rdf:about=""
+                xmlns:dc="http://purl.org/dc/elements/1.1/"
+                xmlns:cc="http://web.resource.org/cc/">
+                <dc:title>Animated SentinelOne Logo</dc:title>
+                <dc:creator>
+                    <cc:Agent>
+                        <dc:title>gcastill0-s1</dc:title>
+                    </cc:Agent>
+                </dc:creator>
+                <dc:description>Animated SVG logo</dc:description>
+                <dc:publisher>SentinelOne</dc:publisher>
+                <dc:date>30-08-2024</dc:date>
+                <dc:format>image/svg+xml</dc:format>
+                <dc:language>en</dc:language>
+                <dc:rights>Copyright SentinelOne, 2024</dc:rights>
+            </rdf:Description>
+        </rdf:RDF>
+    </metadata>
     <g id="Small" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="s1_logo" fill="#ffffff">
             <polygon id="p1" points="" stroke="#FFF">
