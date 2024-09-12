@@ -9,13 +9,19 @@
 
     <style>
         body {
+            margin: 0;
             width: 100vw;
             height: 100vh;
-            overflow: hidden;
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: black;
+            background-color: #222;
+            background: linear-gradient(27deg, #222222, #6100FF66, #4500B666, #222222), url(img/background.svg), url(img/background-path.svg);
+            /* background: radial-gradient(#222, #4500B6, #6100FF); */
+            /* background: radial-gradient(#4500B6, #222); */
+            /* background-image: url(img/background-path.svg); */
+            background-position: center;
+            overflow: hidden;
         }
     </style>
 </head>
@@ -26,7 +32,7 @@
     </div>
 
     <script>
-        
+
         var url = "img/s1_logo_light.svg?r=" + Math.random();
         document.querySelector("#loader img").setAttribute("src", url);
 

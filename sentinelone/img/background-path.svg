@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128px" height="64px" viewBox="0 0 256 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>background-path</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-dasharray="4,4">
+        <g id="Small" transform="translate(-384, -63)" stroke="#32C5FF66">
+            <g id="background-path" transform="translate(384, 64)">
+                <path d="M128,0 L0,64 L127.216401,128 L256,64 L128,0 Z" id="Path-2"></path>
+            </g>
+        </g>
+    </g>
+</svg>

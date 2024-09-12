@@ -14,7 +14,7 @@
 
             <polygon id="p2" points="">
                 <animate attributeName="points" dur="0.25s" fill="freeze" begin="1.5s"
-                    from="512 64 514 65 514 237 512 236" to="512 64 856 232 856 404 512 236" />
+                    from="512 64 512 64 512 236 512 236" to="512 64 856 232 856 404 512 236" />
             </polygon>
 
             <polygon id="p3" points="">
