@@ -27,8 +27,8 @@ header {
 
 .ws-cards {
     display: grid;
-    grid-template-columns: 193px 193px 193px 193px;
-    grid-template-rows: 193px;
+    grid-template-columns: 124px 124px 124px 124px;
+    grid-template-rows: 124px;
     gap: 20px;
 }
 
@@ -38,8 +38,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 193px;
-    height: 193px
+    width: 124px;
+    height: 124px
 }
 
 .card img {
