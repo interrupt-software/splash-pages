@@ -27,7 +27,7 @@ header {
 
 .ws-cards {
     display: grid;
-    grid-template-columns: 193px 193px 193px;
+    grid-template-columns: 193px 193px 193px 193px;
     grid-template-rows: 193px;
     gap: 20px;
 }
