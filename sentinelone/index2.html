@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Refresh" content="20; URL=index2.html">
     <style>
         body {
             background-color: #111;
@@ -22,8 +23,15 @@
     </style>
 </head>
 <body>
-    <main>
+    <main id="loader">
         <img src="img/scene_03.svg" alt="Data Sampler">
     </main>
+
+    <script>
+
+        var url = "img/scene_03.svg?r=" + Math.random();
+        document.querySelector("#loader img").setAttribute("src", url);
+
+    </script>
 </body>
 </html>
